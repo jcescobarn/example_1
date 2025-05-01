@@ -4,6 +4,7 @@ jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
+      - run: cd .. 
       - run: ls -la
 
 
