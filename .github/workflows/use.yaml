@@ -24,4 +24,4 @@ jobs:
           NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
         run: |
           pip install milib-ejemplo \
-            --index-url http://${NEXUS_USERNAME}:${NEXUS_PASSWORD}@{NEXUS_URL}
+            --index-url http://${NEXUS_USERNAME}:${NEXUS_PASSWORD}@${NEXUS_URL}
