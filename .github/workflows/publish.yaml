@@ -25,6 +25,12 @@ jobs:
       - name: Build package
         run: |
           python -m build
+    
+      - name: List build output
+        run: |
+          ls -la
+          ls -la dist
+
 
       - name: Upload package to Nexus PyPI
         env:
