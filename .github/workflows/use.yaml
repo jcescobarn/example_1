@@ -1,4 +1,4 @@
-diname: Test Python Package from Nexus
+name: Test Python Package from Nexus
 
 on:
   push:
