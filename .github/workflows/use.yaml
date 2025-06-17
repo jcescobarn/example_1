@@ -1,9 +1,9 @@
-name: Test Python Package from Nexus
+diname: Test Python Package from Nexus
 
 on:
   push:
     branches:
-      - implements 
+      - implements
 
 jobs:
   test:
@@ -24,4 +24,4 @@ jobs:
           NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
         run: |
           pip install milib-ejemplo \
-            --index-url http://${NEXUS_USERNAME}:${NEXUS_PASSWORD}@${NEXUS_URL}
+            --index-url http://${NEXUS_USERNAME}:${NEXUS_PASSWORD}@ec2-35-153-160-39.compute-1.amazonaws.com:8081/repository/Mylibrarie/simple/
